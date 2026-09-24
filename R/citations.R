@@ -9,20 +9,21 @@
 #' height-diameter model form supported by \code{\link{ht_from_dbh}} and
 #' \code{\link{fit_hd_model}}.
 #'
-#' @return A data frame with columns:
-#' \describe{
-#'   \item{model}{Model name as used in \code{ht_from_dbh}.}
-#'   \item{n_params}{Number of fitted parameters (excluding the 1.3 m offset).}
-#'   \item{equation}{Equation in plain text.}
-#'   \item{author}{Short author–year label.}
-#'   \item{citation}{Full bibliographic reference.}
-#' }
+#' @param short logical. If \code{TRUE}, returns a compact two-column table
+#'   (\code{model}, \code{author}) suitable for joining to a tree-level
+#'   dataset via the \code{model} column.  Default \code{FALSE}.
+#'
+#' @return A data frame. When \code{short = FALSE} (default): full table with
+#'   columns \code{model}, \code{n_params}, \code{equation}, \code{author},
+#'   \code{citation}.  When \code{short = TRUE}: two columns only,
+#'   \code{model} and \code{author}.
 #'
 #' @export
 #' @examples
 #' hd_citations()
-hd_citations <- function() {
-  data.frame(
+#' hd_citations(short = TRUE)  # compact join table
+hd_citations <- function(short = FALSE) {
+  out <- data.frame(
     model = c(
       "naslund", "curtis", "logistic",
       "korf", "weibull", "richards"
@@ -76,6 +77,9 @@ hd_citations <- function() {
   )
   if (short) out[, c("model", "author")] else out
 }
+
+
+#' Citations for the supported biomass equation sources
 #'
 #' @description
 #' Returns a data frame giving the full bibliographic reference for each

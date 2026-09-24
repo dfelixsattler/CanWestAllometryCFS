@@ -1,6 +1,7 @@
 Package: BCallometryRCFS
 Type: Package
-Title: Calculate H-D relationships, taper, volume, and biomass for species in BC
+Title: Allometric Equations for British Columbia: Height-Diameter, Taper,
+    Volume, and Biomass
 Version: 0.1.0
 Date: 2026-06-22
 Authors@R: c(

@@ -4,17 +4,18 @@
 \alias{hd_citations}
 \title{Citations for the supported height-diameter equation forms}
 \usage{
-hd_citations()
+hd_citations(short = FALSE)
+}
+\arguments{
+\item{short}{logical. If \code{TRUE}, returns a compact two-column table
+(\code{model}, \code{author}) suitable for joining to a tree-level
+dataset via the \code{model} column.  Default \code{FALSE}.}
 }
 \value{
-A data frame with columns:
-\describe{
-  \item{model}{Model name as used in \code{ht_from_dbh}.}
-  \item{n_params}{Number of fitted parameters (excluding the 1.3 m offset).}
-  \item{equation}{Equation in plain text.}
-  \item{author}{Short author–year label.}
-  \item{citation}{Full bibliographic reference.}
-}
+A data frame. When \code{short = FALSE} (default): full table with
+  columns \code{model}, \code{n_params}, \code{equation}, \code{author},
+  \code{citation}.  When \code{short = TRUE}: two columns only,
+  \code{model} and \code{author}.
 }
 \description{
 Returns a data frame giving the primary published source for each
@@ -23,4 +24,5 @@ height-diameter model form supported by \code{\link{ht_from_dbh}} and
 }
 \examples{
 hd_citations()
+hd_citations(short = TRUE)  # compact join table
 }

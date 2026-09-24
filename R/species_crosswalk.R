@@ -55,9 +55,7 @@
 #'
 #' @seealso \code{\link{plant_codes}}, \code{\link{plant_code_to_sp0}},
 #'   \code{\link{common_name_to_plant_code}}
-#' @examples
-#' # internal use only; use bc_species_to_osm() for the public API
-NULL
+#' @noRd
 .sp0_to_plant_code <- function(sp0) {
   result <- vapply(sp0, .pc_lookup,
                    from_col = "sp0", to_col = "plant_code",

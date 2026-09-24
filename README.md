@@ -144,7 +144,13 @@ following columns:
 | `HD_SOURCE` | `ht_impute()` | Source of the height value (e.g. `"measured"`, `"naslund_mixed-effects_sp0"`) |
 | `HT_FLAG` | `ht_impute()` | QC flag (e.g. `"btop"` for broken-top trees) |
 
-## Citation
+## How to Cite
+
+If you use BCallometryRCFS in published work, please cite it as:
+
+> Sattler, D. (2026). *BCallometryRCFS: Allometric Equations for British Columbia: Height–Diameter, Taper, Volume, and Biomass*. R package version 0.1.0. https://github.com/dfelixsattler/BCallometryRCFS
+
+A machine-readable citation is also available in R via:
 
 ```r
 citation("BCallometryRCFS")

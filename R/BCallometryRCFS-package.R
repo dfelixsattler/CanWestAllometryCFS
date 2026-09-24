@@ -119,6 +119,7 @@
 # Suppress R CMD check note for lazy-loaded package data accessed inside
 # .biomass_lookup() and tree_volume() without an explicit namespace qualifier.
 utils::globalVariables(c("biomass_coefs", "taper_coefs_kbec", "taper_coefs_kfiz3",
+                         "taper_coefs_huang",
                          "plant_codes", "bc_species_codes", "psp_trees"))
 
 # head() and tail() are used in .tree_vol_single() -- declare to satisfy check.

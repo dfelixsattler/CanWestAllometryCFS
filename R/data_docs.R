@@ -265,6 +265,55 @@
 #'                   c("fiz_zone", "P", "A0", "A1")]
 "taper_coefs_kfiz3"
 
+
+#' Huang (1994) Alberta taper equation coefficients
+#'
+#' @description
+#' Coefficients for the Huang et al. (1994) ecologically based variable-exponent
+#' taper equation, used by \code{\link{tree_volume_huang}} to compute
+#' individual-tree merchantable and whole-stem volume for major western Canadian
+#' tree species.  Coefficients are stratified by species and Alberta natural
+#' subregion.
+#'
+#' @format A data frame with 129 rows and 11 variables:
+#' \describe{
+#'   \item{species}{character. Huang species code in genus.species form
+#'     (e.g. \code{"PINU.CON"}, \code{"POPU.TRE"}, \code{"PICE.GLA"}).}
+#'   \item{NaturalSubregionCode}{character. Alberta natural subregion code
+#'     (e.g. \code{"LF"}, \code{"CM"}, \code{"Province"}).}
+#'   \item{NaturalSubregionNum}{integer. Numeric natural subregion identifier.}
+#'   \item{a0, a1, a2}{numeric. Multiplicative taper coefficients.}
+#'   \item{b1, b2, b3, b4, b5}{numeric. Variable-exponent taper coefficients.}
+#' }
+#'
+#' @details
+#' The Huang taper equation (Kozak sqrt-transform form) predicts inside-bark
+#' diameter \eqn{d_i} at height \eqn{h_i}:
+#' \deqn{d_i = a_0 \cdot D^{a_1} \cdot a_2^{D} \cdot
+#'   X^{(b_1 Z^2 + b_2 \ln(Z + 0.001) + b_3 \sqrt{Z} + b_4 e^{Z} + b_5 D/H)}}
+#' where \eqn{Z = h_i / H} and \eqn{X = (1 - \sqrt{Z})/(1 - \sqrt{0.225})}.
+#'
+#' Coefficients were transcribed from the CTAE R package
+#' (\code{ptompalski/CTAE}, object \code{parameters_HuangV}), which digitises
+#' Huang et al. (1994) Appendix 3.  The Upper Boreal Highlands (\code{"UB"})
+#' share the Lower Boreal Highlands (\code{"LBH"}) coefficients.
+#'
+#' @references
+#'   Huang, S. (1994). Ecologically based individual tree volume estimation
+#'   for major Alberta tree species. Alberta Environmental Protection, Land
+#'   and Forest Services, Forest Management Division.
+#'
+#' @seealso \code{\link{tree_volume_huang}}, \code{\link{taper_coefs_kbec}}
+#' @examples
+#' # Species covered
+#' unique(taper_coefs_huang$species)
+#'
+#' # Coefficients for lodgepole pine in the Lower Foothills subregion
+#' taper_coefs_huang[taper_coefs_huang$species == "PINU.CON" &
+#'                   taper_coefs_huang$NaturalSubregionCode == "LF", ]
+"taper_coefs_huang"
+
+
 #' Species crosswalk: OSM PlantCodes ↔ BC SP0 ↔ common names
 #'
 #' @description
