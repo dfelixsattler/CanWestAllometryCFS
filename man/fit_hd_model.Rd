@@ -137,7 +137,7 @@ result_2l$random_effects_inner
 # prediction — the pattern used by fit_hd_models_by_group() internally,
 # exposed here for users who need full control.
 # -------------------------------------------------------------------
-library(BCallometryRCFS)
+library(CanWestAllometryCFS)
 trees <- psp_trees
 trees$SPECIES_CORR    <- species_correction(trees$SPECIES, trees$BEC_ZONE)
 trees$SPECIES_SP0     <- bc_species_to_sp0(trees$SPECIES_CORR)

@@ -7,7 +7,7 @@
 #' @description
 #' A simulated permanent-sample-plot (PSP) tree list that mirrors the
 #' structure of real BC inventory data. Designed to support all three
-#' BCallometryRCFS workflows without any additional data preparation:
+#' CanWestAllometryCFS workflows without any additional data preparation:
 #' \itemize{
 #'   \item \strong{H-D modelling} -- fit \code{\link{fit_hd_model}} to the
 #'     trees with measured heights, then predict heights for unmeasured trees.

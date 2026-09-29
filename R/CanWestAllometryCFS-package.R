@@ -1,4 +1,4 @@
-#' BCallometryRCFS: Allometric equations for BC forestry
+#' CanWestAllometryCFS: Allometric equations for western Canadian forestry
 #'
 #' @description
 #' Provides allometric equations for British Columbia forestry workflows.

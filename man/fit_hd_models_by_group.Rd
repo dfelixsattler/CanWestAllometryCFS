@@ -104,7 +104,7 @@ incorporate the plot-level random effect
 \examples{
 \dontrun{
 # Assumes psp_trees has been crosswalked to add SPECIES_SP0, SPECIES_SP_TYPE
-library(BCallometryRCFS)
+library(CanWestAllometryCFS)
 trees <- psp_trees
 trees$SPECIES_CORR    <- species_correction(trees$SPECIES, trees$BEC_ZONE)
 trees$SPECIES_SP0     <- bc_species_to_sp0(trees$SPECIES_CORR)

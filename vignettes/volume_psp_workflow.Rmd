@@ -63,7 +63,7 @@ unique(taper_coefs_kfiz3[, c("species", "fiz_zone")])
 ```
 
 ```{r load-data}
-library(BCallometryRCFS)
+library(CanWestAllometryCFS)
 
 # Use HEIGHT_TRUE so all trees have a height value for volume calculation.
 # In practice, replace with predicted heights from fit_hd_model() first.

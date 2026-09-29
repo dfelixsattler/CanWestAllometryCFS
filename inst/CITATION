@@ -1,16 +1,16 @@
-citHeader("To cite BCallometryRCFS in publications, use:")
+citHeader("To cite CanWestAllometryCFS in publications, use:")
 
 bibentry(
   bibtype     = "Manual",
-  title       = "BCallometryRCFS: Allometric Equations for British Columbia: Height-Diameter, Taper, Volume, and Biomass",
+  title       = "CanWestAllometryCFS: Allometric Equations for Western Canadian Forestry: Height-Diameter, Taper, Volume, and Biomass",
   author      = person("Derek Felix", "Sattler"),
   year        = "2026",
   note        = "R package version 0.1.0",
-  url         = "https://github.com/dfelixsattler/BCallometryRCFS",
+  url         = "https://github.com/dfelixsattler/CanWestAllometryCFS",
   textVersion = paste(
     "Sattler, D. (2026).",
-    "BCallometryRCFS: Allometric Equations for British Columbia: Height-Diameter, Taper, Volume, and Biomass.",
+    "CanWestAllometryCFS: Allometric Equations for Western Canadian Forestry: Height-Diameter, Taper, Volume, and Biomass.",
     "R package version 0.1.0.",
-    "https://github.com/dfelixsattler/BCallometryRCFS"
+    "https://github.com/dfelixsattler/CanWestAllometryCFS"
   )
 )

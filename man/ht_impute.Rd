@@ -115,7 +115,7 @@ visit.  Such trees are flagged \code{"ht_est_too_high"} in
 }
 \examples{
 \dontrun{
-library(BCallometryRCFS)
+library(CanWestAllometryCFS)
 trees <- psp_trees
 trees$SPECIES_CORR    <- species_correction(trees$SPECIES, trees$BEC_ZONE)
 trees$SPECIES_SP0     <- bc_species_to_sp0(trees$SPECIES_CORR)

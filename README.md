@@ -1,4 +1,4 @@
-# BCallometryRCFS
+# CanWestAllometryCFS
 
 An R package for tree-level calculation of H-D relationships and height
 imputation, stem volume, and above-ground biomass, with an emphasis on
@@ -22,7 +22,7 @@ that the relevant `_col` arguments are set to the correct column names).
 
 ```r
 # Install from GitHub
-remotes::install_github("dfelixsattler/BCallometryRCFS")
+remotes::install_github("dfelixsattler/CanWestAllometryCFS")
 ```
 
 ## Data pipeline
@@ -80,7 +80,7 @@ flowchart TD
 ## Quick start
 
 ```r
-library(BCallometryRCFS)
+library(CanWestAllometryCFS)
 
 trees <- psp_trees
 
@@ -146,14 +146,14 @@ following columns:
 
 ## How to Cite
 
-If you use BCallometryRCFS in published work, please cite it as:
+If you use CanWestAllometryCFS in published work, please cite it as:
 
-> Sattler, D. (2026). *BCallometryRCFS: Allometric Equations for British Columbia: Height–Diameter, Taper, Volume, and Biomass*. R package version 0.1.0. https://github.com/dfelixsattler/BCallometryRCFS
+> Sattler, D. (2026). *CanWestAllometryCFS: Allometric Equations for British Columbia: Height–Diameter, Taper, Volume, and Biomass*. R package version 0.1.0. https://github.com/dfelixsattler/CanWestAllometryCFS
 
 A machine-readable citation is also available in R via:
 
 ```r
-citation("BCallometryRCFS")
+citation("CanWestAllometryCFS")
 ```
 
 ## Acknowledgements

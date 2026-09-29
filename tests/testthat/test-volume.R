@@ -170,8 +170,8 @@ test_that("tree_volume WSV matches FAIBBase reference values", {
     0.85515978,
     tolerance = 1e-4
   )
-  # Broken-top tree: BCallometryRCFS intentionally >= FAIBBase by <= 0.02 m3.
-  # BCallometryRCFS includes the last Smalian slice up to btop_height;
+  # Broken-top tree: CanWestAllometryCFS intentionally >= FAIBBase by <= 0.02 m3.
+  # CanWestAllometryCFS includes the last Smalian slice up to btop_height;
   # FAIBBase excludes it (HT_I_next < BTOPHeight strict inequality).
   ref_btop <- 0.71841045  # FAIBBase VOL_WSV for btop = 15 m
   bc_btop  <- tree_volume("CWH", "H", 30.7, 27.4, btop_height = 15)

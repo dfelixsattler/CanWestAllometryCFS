@@ -43,7 +43,7 @@ The steps are:
 Load the simplified PSP data included with the package:
 
 ```{r load-data}
-library(BCallometryRCFS)
+library(CanWestAllometryCFS)
 
 trees <- psp_trees
 

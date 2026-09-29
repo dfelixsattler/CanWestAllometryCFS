@@ -45,7 +45,7 @@ trees (`LV_D == "D"`, ~11%) and broken-top trees (`BTOP == TRUE`, ~5%)
 — both are excluded from H-D model training.
 
 ```{r load-data}
-library(BCallometryRCFS)
+library(CanWestAllometryCFS)
 
 sim_trees <- psp_trees[psp_trees$SPECIES %in% c("FDI", "PLI", "HW"), ]
 

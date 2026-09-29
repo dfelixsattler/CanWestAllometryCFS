@@ -1,4 +1,4 @@
 library(testthat)
-library(BCallometryRCFS)
+library(CanWestAllometryCFS)
 
-test_check("BCallometryRCFS")
+test_check("CanWestAllometryCFS")

@@ -43,7 +43,7 @@ BC PSP archive. `bc_species_to_biomass_name()` crosses the raw codes to the
 common names expected by `biomass_tree()`.
 
 ```{r load-data}
-library(BCallometryRCFS)
+library(CanWestAllometryCFS)
 
 sim_trees <- psp_trees
 

@@ -1,7 +1,7 @@
-Package: BCallometryRCFS
+Package: CanWestAllometryCFS
 Type: Package
-Title: Allometric Equations for British Columbia: Height-Diameter, Taper,
-    Volume, and Biomass
+Title: Allometric Equations for Western Canadian Forestry: Height-Diameter,
+    Taper, Volume, and Biomass
 Version: 0.1.0
 Date: 2026-06-22
 Authors@R: c(
