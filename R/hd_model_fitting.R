@@ -1,3 +1,13 @@
+# Portions of this file are adapted from the FAIBCompiler R package
+# (https://github.com/bcgov/FAIBCompiler), files R/DBH_Height_MEM.R and
+# R/heightEstimate_byHeightModel.R.
+# Copyright 2019 Province of British Columbia. Original author: Yong Luo.
+# Licensed under the Apache License, Version 2.0; see the LICENSE file.
+# Modified 2026 by Natural Resources Canada: generalised to six H-D model
+# forms with user-selectable fixed- or mixed-effects fitting, automatic
+# starting values, BLUP calibration, broken-top handling, and a documented
+# SP0 -> SP_TYPE fallback hierarchy.
+
 # Fitting height-diameter models to PSP data.  Exported functions:
 # fit_hd_model()              - fit a single-group H-D model (nls or nlme)
 # fit_hd_models_by_group()   - SP0 + SP_TYPE hierarchical fitting pipeline

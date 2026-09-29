@@ -1,5 +1,11 @@
 # CanWestAllometryCFS
 
+<!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![R-CMD-check](https://github.com/dfelixsattler/CanWestAllometryCFS/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/dfelixsattler/CanWestAllometryCFS/actions/workflows/R-CMD-check.yaml)
+[![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+<!-- badges: end -->
+
 An R package for tree-level calculation of H-D relationships and height
 imputation, stem volume, and above-ground biomass, with an emphasis on
 compatibility with BC Ministry of Forests' PSP and non-PSP field data.
@@ -169,3 +175,11 @@ The allometric methods implemented in this package build on the work of
 Natural Resources, 2026.
 
 This package is distributed under the [Apache License 2.0](LICENSE).
+
+Portions of this package are derived from
+[FAIBBase](https://github.com/bcgov/FAIBBase) and
+[FAIBCompiler](https://github.com/bcgov/FAIBCompiler),
+© 2019 Province of British Columbia, which are themselves distributed under the
+Apache License 2.0. Those portions remain subject to that license, and the
+original copyright and attribution notices are retained here as required by
+Section 4 of the Apache License 2.0.

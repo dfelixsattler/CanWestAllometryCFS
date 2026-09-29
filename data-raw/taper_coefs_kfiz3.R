@@ -8,6 +8,9 @@
 #   as reproduced in:
 #   Luo, Y. (FAIBBase R package, bcgov/FAIBBase), R/DIB_ICalculator.R,
 #   function taperCoeffsGenerator(), KFIZ3 branch.
+#   Copyright 2019 Province of British Columbia, licensed under the
+#   Apache License, Version 2.0.  Transcribed and reshaped into a pre-joined
+#   data frame 2026 by Natural Resources Canada.
 #
 # The dataset is a 192-row data frame (16 BC species x 12 FIZ zones) with
 # pre-joined Kozak variable-exponent taper coefficients P, A0-A7.

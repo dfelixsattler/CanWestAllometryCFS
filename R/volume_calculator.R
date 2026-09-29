@@ -1,3 +1,13 @@
+# Portions of this file are adapted from the FAIBBase R package
+# (https://github.com/bcgov/FAIBBase), files R/treeVolCalculator.R,
+# R/DIB_ICalculator.R and R/treeProfile.R.
+# Copyright 2019 Province of British Columbia. Original author: Yong Luo.
+# Licensed under the Apache License, Version 2.0; see the LICENSE file.
+# Modified 2026 by Natural Resources Canada: taper coefficients moved out of
+# the code into package datasets, KBEC/KFIZ3 forms exposed through a single
+# tree_volume() interface, log-section and stem-profile helpers added, and
+# roxygen documentation written.
+
 # Kozak variable-exponent taper equations for BC tree species.
 # Two stratification systems are supported:
 #   KBEC  -- Kozak (2002 BC MoF internal / 2004 published) with BEC-zone

@@ -1,3 +1,11 @@
+# Portions of this file are adapted from the FAIBBase R package
+# (https://github.com/bcgov/FAIBBase), file R/biomassCalculator.R.
+# Copyright 2019 Province of British Columbia. Original author: Yong Luo.
+# Licensed under the Apache License, Version 2.0; see the LICENSE file.
+# Modified 2026 by Natural Resources Canada: restructured into vectorised
+# biomass_tree() / biomass_components(), added component-wise output,
+# height-optional equation selection, and roxygen documentation.
+
 # Aboveground tree biomass using Lambert et al. (2005) and Ung et al. (2008)
 # power allometric equations.  Exported functions: biomass_tree(),
 # biomass_components().

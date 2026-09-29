@@ -7,6 +7,9 @@
 # Source: lookup_species() function from FAIBBase R package
 #   (bcgov/FAIBBase, authored by Yong Luo, NRCan/BC MoF)
 #   BC Ministry of Forests species coding conventions.
+#   Copyright 2019 Province of British Columbia, licensed under the
+#   Apache License, Version 2.0.  Transcribed and reshaped 2026 by
+#   Natural Resources Canada.
 # =============================================================================
 
 library(usethis)

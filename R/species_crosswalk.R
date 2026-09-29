@@ -1,3 +1,13 @@
+# Portions of this file are adapted from the FAIBCompiler R package
+# (https://github.com/bcgov/FAIBCompiler), files R/speciesCorrection.R and
+# R/siteToolsSpeciesConvertor.R, and from the FAIBBase R package
+# (https://github.com/bcgov/FAIBBase), file R/standardizeSpeciesName.R.
+# Copyright 2019 Province of British Columbia. Original author: Yong Luo.
+# Licensed under the Apache License, Version 2.0; see the LICENSE file.
+# Modified 2026 by Natural Resources Canada: rewritten as vectorised,
+# data.table-free functions, code tables moved into package datasets, and
+# a PlantCodes / biomass common-name crosswalk added.
+
 # Species crosswalk helpers ---------------------------------------------------
 # Translates between detailed inventory species codes, group-level species
 # codes (SP0 in BC inventory), OSM PlantCodes, and the lowercase common names

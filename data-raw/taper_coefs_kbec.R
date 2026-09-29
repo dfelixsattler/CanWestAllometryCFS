@@ -10,6 +10,9 @@
 #   Luo, Y. (FAIBBase R package, bcgov/FAIBBase), R/DIB_ICalculator.R
 #   which implements the BC Ministry of Forests KBEC 2002 taper equations
 #   (equivalent to the vol_tree_active_equation subroutine in vol_setup macro).
+#   Copyright 2019 Province of British Columbia, licensed under the
+#   Apache License, Version 2.0.  Transcribed and reshaped into a pre-joined
+#   data frame 2026 by Natural Resources Canada.
 #
 # The dataset is a 208-row data frame (16 BC species × 13 BEC zones) with
 # pre-joined Kozak (2002) taper coefficients B1-B9 and ERR.
