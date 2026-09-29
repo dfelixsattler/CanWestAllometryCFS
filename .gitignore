@@ -11,3 +11,7 @@
 # Large validation/test data files — not part of the package
 my_tests/faib_tree_detail_subtest.csv
 my_tests/faib_plot_header.csv
+
+# Internal dev/validation scripts and working notes — not part of the package
+my_tests/
+PROJECT_STATUS.md
